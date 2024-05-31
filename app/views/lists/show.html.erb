@@ -1,7 +1,7 @@
 <h1><%= @list.name %></h1>
 
 <h2>Movies</h2>
-<%= link_to 'Add a movie', bookmarks_new_path(@bookmark) %>
+<%= link_to 'Add a movie', new_list_bookmark_path(@list) %>
 <ul class="list-group">
   <% @list.movies.each do |movie| %>
     <li class="list-group-item">
