@@ -1,5 +1,6 @@
 <%= form_with model: list do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit %>
 <% end %>
